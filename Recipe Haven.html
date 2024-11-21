@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Haven</title>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #ff7f50;
+      color: white;
+      padding: 20px 0;
+    }
+
+    #search-bar {
+      margin-top: 10px;
+      padding: 10px;
+      width: 80%;
+    }
+
+    #cuisines {
+      margin: 20px 0;
+    }
+
+    #cuisines button {
+      background-color: #ff4500;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    #cuisines button:hover {
+      background-color: #ff6347;
+    }
+
+    table {
+      margin: 20px auto;
+      width: 90%;
+      border-collapse: collapse;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+      position: relative; /* For positioning hover box */
+    }
+
+    .dish-container {
+      display: inline-block;
+      position: relative;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      cursor: pointer;
+      border-radius: 10px;
+    }
+.recipe-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+    footer {
+      text-align: center;
+      background-color: #ff6347;
+      color: white;
+      padding: 1rem;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Recipe Haven</h1>
+    <input type="text" id="search-bar" placeholder="Search recipes...">
+  </header>
+  
+  <section id="cuisines">
+    <button>Indian</button>
+    <button>Italian</button>
+    <button>Chinese</button>
+  </section>
+
+  <main>
+    <table>
+      <tr>
+        <td>
+          <div class="recipe-card">
+            <img src="dish1.jpg" alt="Dish 1" onclick="showRecipe('D')">  
+            <p>Biryani</p>                                                                                               
+        </div>
+        </td>
+        <td>
+          <div class="recipe-card">
+            <img src="dish2.jpg" alt="Dish 2" onclick="showRecipe('Dish 2.html')">
+            <p>Paneer Tikka Masala</p>
+          </div>
+        </td>
+        <td>
+          <div class="recipe-card">
+            <img src="dish3.jpg" alt="Dish 3" onclick="showRecipe('Dish 3')">
+            <p>Butter Chicken </p>
+          </div>
+        </td>
+        <td>
+            <div class="recipe-card">
+              <img src="dish4.jpg" alt="Dish 4" onclick="showRecipe('Dish 4')">  
+              <p>Chole Bhature</p>                                                                                               
+          </div>
+          </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="recipe-card">
+                  <img src="dish5.jpg" alt="Dish 5" onclick="showRecipe('Dish 5')">  
+                  <p>Tiramisu</p>                                                                                               
+              </div>
+              </td><td>
+                <div class="recipe-card">
+                  <img src="dish1.jpg" alt="Dish 6" onclick="showRecipe('Dish 6')">  
+                  <p>Risotto alla Milanese</p>                                                                                               
+              </div>
+              </td><td>
+                <div class="recipe-card">
+                  <img src="dish1.jpg" alt="Dish 7" onclick="showRecipe('Dish 7')">  
+                  <p>Spaghetti Carbonara</p>                                                                                               
+              </div><td>
+                <div class="recipe-card">
+                  <img src="dish1.jpg" alt="Dish 8" onclick="showRecipe('Dish 8')">  
+                  <p>Margherita Pizza</p>                                                                                               
+              </div>
+              </td>
+              </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="recipe-card">
+                  <img src="dish1.jpg" alt="Dish 1" onclick="showRecipe('Dish 9')">  
+                  <p>Sweet and Sour Chicken</p>                                                                                               
+              </div>
+              </td><td>
+                <div class="recipe-card">
+                  <img src="dish1.jpg" alt="Dish 1" onclick="showRecipe('Dish 10')">  
+                  <p>Vegetable Fried Rice</p>                                                                                               
+              </div>
+              </td><td>
+                <div class="recipe-card">
+                  <img src="dish1.jpg" alt="Dish 1" onclick="showRecipe('Dish 11')">  
+                  <p>Spring Rolls</p>                                                                                               
+              </div><td>
+                <div class="recipe-card">
+                  <img src="dish1.jpg" alt="Dish 1" onclick="showRecipe('Dish 12')">  
+                  <p>Kung Pao Chicken</p>                                                                                               
+              </div>
+              </td>
+              </td>
+        </tr>     
+    </table>
+  </main>
+  <footer>
+    <p>&copy; 2024 Recipe Haven</p>
+  </footer>
+  <script>
+    function showRecipe(dishName) {
+      alert(`Redirecting to the recipe for ${dishName}.`);
+    }
+  </script>
+</body>
+</html>

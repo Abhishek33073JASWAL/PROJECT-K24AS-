@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Ink</title>
+    <style>
+    
+.book-list {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color:black;
+}
+
+.book {
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-details h2 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.book-details p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #ffdd57;
+    text-decoration: underline;
+}
+
+
+.book-list {
+    padding: 20px;
+    text-align: center;
+    color: #ddd;
+}
+
+
+.books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 20px; 
+    background-color: black;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #ffdd57;
+}
+
+.footer a:hover {
+    text-decoration: underline;}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="About me.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="book-list">
+        <h1>FICTION BOOKS</h1>
+        <div class="books-container">
+                <div class="book">
+                <img src="cover1.jpg" alt="Sorcerer's Stone">
+                    <div class="book-details">
+                    <h2>Harry Potter 1</h2>
+                    <p>Author: JK ROWLING</p>   
+                    <p>FANTASY, MAGIC, CHILDREN</p>
+                    <a href="https://www.scholastic.com/hpread/HP_Book1_Chapter_Excerpt.pdf" class="read-more">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="cover2.jpg" alt="Prisoner of Azkaban">
+                <div class="book-details">
+                    <h2>Harry Potter 2</h2>
+                        <p>Author: JK ROWLING</p>
+                        <p><i>FANTASY, MAGIC, CHILDREN</i></p>
+                    <a href="https://ia902903.us.archive.org/12/items/FantasyFictionebookcollection/Harry%20Potter/3%20-%20Harry%20Potter%20and%20the%20Prisoner%20of%20Azkaban.pdf" class="read now">Read Now</a>
+                </div>
+                    </div>
+            <div class="book">
+                <img src="cover 3.jpg" alt="Chamber of Secrets">
+                <div class="book-details">
+                    <h2>Harry Potter 3</h2>
+                    <p>Author: JK ROWLING</p>
+                    <p><i>FANTASY, MAGIC, CHILDREN</i></p>
+                    <a href="https://www.scholastic.com/hpread/HP_Book2_Chapter_Excerpt.pdf" class="read now">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="cover4.jpg" alt="Goblet of Fire">
+                <div class="book-details">
+                    <h2>Harry Potter 4</h2>
+                    <p>Author: JK ROWLING </p>
+                    <p><i>FANTASY, MAGIC, CHILDREN</i></p>
+                    <a href="https://hp.subhamram.in/J.K.%20Rowling%20-%20HP%204%20-%20Harry%20Potter%20and%20the%20Goblet%20of%20Fire.pdf" class="read now">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="cover5.jpg" alt="Cursed Child">
+                <div class="book-details">
+                    <h2>Harry Potter 5</h2>
+                    <p>Author: JK ROWLING</p>
+                    <p><i>FANTASY, MAGIC, CHILDREN.</i></p>
+                    <a href="https://kvdrdolibrary.wordpress.com/wp-content/uploads/2021/08/harry_potter_and_the_cursed_child.pdf" class="read now">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="hf-b.jpg" alt="Half-Blood Prince">
+                <div class="book-details">
+                    <h2>Harry Potter 6</h2>
+                    <p>Author: JK ROWLING</p>
+                    <p><i>FANTASY, MAGIC, CHILDREN</i></p>
+                    <a href="https://kvongcmehsanalibrary.wordpress.com/wp-content/uploads/2021/07/harry-potter-and-the-half-blood-prince-j.k.-rowling.pdf" class="read now">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="phoe.jpg" alt="Order of Phoenix">
+                <div class="book-details">
+                    <h2>Harry Potter 7</h2>
+                    <p>Author: JK ROWLING</p>
+                    <p><i>FANTASY, MAGIC, CHILDREN</i></p>
+                    <a href="https://vidyaprabodhinicollege.edu.in/VPCCECM/ebooks/ENGLISH%20LITERATURE/Harry%20potter/(Book%205)%20Harry%20Potter%20And%20The%20Order%20Of%20The%20Phoenix%20Book_001.pdf" class="read now">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="2.jpg" alt="Vol 1">
+                <div class="book-details">
+                    <h2>ONE PIECE Vol.1</h2>
+                    <p>Author: Eiichiro Oda</p>
+                    <p><i>PIRATES, MANGA, ADVENTURE</i></p>
+                    <a href="https://pdfroom.com/books/one-piece-volume-001/9ZdYrlVngV4" class="read now">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="3.jpg" alt="Vol 2">
+                <div class="book-details">
+                    <h2>ONE PIECE Vol.2</a></h2>
+                    <p>Author: Eiichiro Oda</p>
+                    <p><i>PIRATES, MANGA, ADVENTURE</i></p>
+                    <a href="https://pdfroom.com/books/one-piece-volume-002/zydDWpmy514" class="read now">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="4.jpg" alt="Vol 3">
+                <div class="book-details">
+                    <h2>ONE PIECE Vol.3</h2>
+                    <p>Author: Eiichiro Oda</p>
+                    <p><I>PIRATES, MANGA, ADVENTURE</I></p>
+                    <a href="https://pdfroom.com/books/one-piece-volume-003/bXgPNEkL5ev" class="read now">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="1.jpg" alt="Vol 4">
+                <div class="book-details">
+                    <h2>ONE PIECE Vol.4</h2>
+                    <p>Author: Eiichiro Oda</p>
+                    <p><i>PIRATES, MANGA, ADVENTURE</i></p>
+                    <a href="https://pdfroom.com/books/one-piece-volume-004/ra51nMyjdJO" class="read now">Read Now</a>
+                </div>
+            </div>
+            <div class="book">
+                <img src="6.jpg" alt="Vol 5">
+                <div class="book-details">
+                    <h2>ONE PIECE Vol.5</h2>
+                    <p>Author:Eiichiro Oda</p>
+                    <p><i>PIRATES, MANGA, ADVENTURE</i></p>
+                    <a href="https://pdfroom.com/books/one-piece-volume-005/LvgBWxep2Dw" class="read now">Read Now</a>
+                </div>
+            </div>
+        </div>
+        </section>
+    <footer class="footer">
+        <p>Contact: <a href="abhishek33073jaswal@gmail.com">abhishek33073jaswal@gmail.com</a></p>
+        <p>Name: Abhishek Jaswal</p>
+        <p><a href="contact.html">Contact Us</a></p>
+    </footer>
+</body>
+</html>
